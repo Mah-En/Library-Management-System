@@ -1,0 +1,85 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\title{Library Management System Project Report}
+\author{Mahla Entezari}
+\date{Mar 2023}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+This project is a simple command-line based Library Management System written in Java. It supports operations for both users and librarians, including borrowing and returning books, managing book inventories, and user registration.
+
+\section{System Overview}
+The system is designed with an object-oriented approach and consists of several classes, each representing a component of the library system.
+
+\section{Class Descriptions}
+
+\subsection{Book}
+The \texttt{Book} class contains basic information about a book including its name, author, publication year, and ISBN. It provides getter and setter methods to access and modify these attributes.
+
+\subsection{User}
+The \texttt{User} class represents a library user. It includes a username, password, and a list of borrowed books. It allows users to rent and return books.
+
+\subsection{Librarian}
+The \texttt{Librarian} class holds credentials of library administrators who are authorized to manage the book collection.
+
+\subsection{Library}
+This is the core class of the system. It maintains lists of books, users, and librarians and provides functionality to:
+
+\begin{itemize}
+    \item Add, remove, update, and search for books
+    \item Add, remove, update, and search for users
+    \item Add, remove, and search for librarians
+    \item Track the quantity of each book
+\end{itemize}
+
+\subsection{Main}
+The \texttt{Main} class runs the application. It includes the menu-driven interface where users and librarians can interact with the system.
+
+\section{Functionalities}
+
+\subsection{User Operations}
+\begin{itemize}
+    \item Login and logout
+    \item Register as a new user
+    \item Borrow books
+    \item Return books
+\end{itemize}
+
+\subsection{Librarian Operations}
+\begin{itemize}
+    \item Login and logout
+    \item Add new books
+    \item Remove books
+    \item Increase/decrease quantity of books
+\end{itemize}
+
+\section{Sample Code Snippet}
+Here is an example of how the system allows a user to borrow a book:
+\begin{lstlisting}[language=Java, basicstyle=\ttfamily\small, keywordstyle=\color{blue}]
+if (!library.doesBookExist(name, author, year, isbn)) {
+    System.err.println("This book doesn't exist!");
+} else {
+    library.removeBook(name, author, year, isbn);
+}
+\end{lstlisting}
+
+\section{Conclusion}
+The project demonstrates fundamental principles of object-oriented programming. Future enhancements may include persistent storage, a GUI, or user authentication with encryption.
+
+\end{document}
