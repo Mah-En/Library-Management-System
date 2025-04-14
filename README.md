@@ -1,9 +1,5 @@
 # Library Management System
 
-> **Description**: A simple Java-based Library Management System that allows users to register, borrow, and return books, while librarians can manage books and users. It features an interactive CLI, user authentication, and follows object-oriented programming principles.
-
----
-
 ## 📚 Introduction
 This application is developed to simulate a basic library management system. It enables both users and librarians to interact with a digital library environment through the command line.
 
