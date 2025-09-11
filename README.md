@@ -1,6 +1,6 @@
 # Library Management System
 
-## 📚 Introduction
+## Introduction
 This application is developed to simulate a basic library management system. It enables both users and librarians to interact with a digital library environment through the command line.
 
 ---
@@ -14,7 +14,7 @@ This application is developed to simulate a basic library management system. It 
 
 ---
 
-## 🛠️ Project Tasks
+## Project Tasks
 
 1. Forked the repository and cloned it locally. Created a new branch before development.
 2. Completed and implemented core classes:
@@ -34,7 +34,7 @@ This application is developed to simulate a basic library management system. It 
 
 ---
 
-## 📦 System Overview
+## System Overview
 
 ### Class Structure
 
@@ -48,16 +48,16 @@ This application is developed to simulate a basic library management system. It 
 
 ---
 
-## 🧪 Functionalities
+## Functionalities
 
-### 👤 User Operations
+### User Operations
 - Register or login
 - Borrow books
 - Return books
 - View available books
 - Logout
 
-### 🔐 Librarian Operations
+### Librarian Operations
 - Login and authentication
 - Add new books or increase quantity
 - Remove books or decrease quantity
@@ -66,7 +66,7 @@ This application is developed to simulate a basic library management system. It 
 
 ---
 
-## 🧾 Sample Code Snippet
+## Sample Code Snippet
 
 ```java
 if (!library.doesBookExist(name, author, year, isbn)) {
@@ -80,7 +80,7 @@ This code checks if a book exists in the library before removing a copy from the
 
 ---
 
-## ✅ Evaluation
+## Evaluation
 
 - ✔️ Code compiles and executes without errors.
 - ✔️ Object-Oriented Programming principles are applied properly.
